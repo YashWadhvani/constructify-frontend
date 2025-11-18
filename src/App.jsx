@@ -97,7 +97,7 @@ function AppContent({ isAuthenticated, collapsed, setCollapsed }) {
                     path="/transporation"
                     element={isAuthenticated ? <Transportation /> : <Navigate to="/login" replace />}
                   />
-                  <Route path="/" element={<Navigate to="/login" replace />} />
+                  <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 </Routes>
               </motion.div>
             </AnimatePresence>
